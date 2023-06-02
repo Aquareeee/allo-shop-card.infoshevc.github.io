@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  padding: 100px;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+li {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 25px;
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+a {
+  text-align: center;
+  font-family: Arial;
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+  line-height: 26px;
+}
+
+.main-text {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.category-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-list-button {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  margin: 8px;
+  white-space: nowrap;
+  height: 28px;
+  transform: scale(1);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+.category-list-button,
+.category-list-linked {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.category-list-button:hover,
+.category-list-linked:hover {
+  color: rgb(255, 55, 55);
+  transform: scale(1.025);
+}
+
+.category-list-button:hover {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  transform: translate(0%, -8%);
+}
+
+.category-list-linked {
+  margin: 5px;
+  padding: 11.5px;
+  font-size: 13px;
+}
+
+.product-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.product-list-block {
+  width: 250px;
+  height: 450px;
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.product-text {
+  height: 78px;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-list-block:hover {
+  color: #6163db;
+  transform: scale(1.025);
+}
+
+.product-text:hover {
+  text-shadow: 0px 0px 3px rgba(97, 99, 219, 0.6);
+  transform: scale(1.025);
+}
+
+.product-list-block:hover {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  transform: translate(0%, -2%);
+}
+
+.product-profile {
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.svg-selections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.svg-block1,
+.svg-block2,
+.svg-block3 {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transform: scale(1);
+  flex: 1;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.paw-block img {
+  width: 30px;
+  height: 30px;
+}
+
+.svg-block1:hover,
+.svg-block2:hover,
+.svg-block3:hover {
+  background-color: transparent;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  transform: translate(0%, -1%) scale(1.025);
+}
+
+.rating-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.rate-block {
+  display: flex;
+  align-items: center;
+  margin: 6px;
+  transform: scale(1);
+}
+
+.rate-block img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.rete-selections {
+  display: flex;
+}
+
+.rate-selection {
+  transform: scale(1);
+}
+
+.rate-selection:hover {
+  transform: translate(0%, -1%) scale(1.025);
+}
+
+.rate-text1 {
+  font-size: 13px;
+  margin: 6px;
+  transform: scale(1);
+}
+
+.rate-text1:hover {
+  transform: translate(0%, -1%) scale(1.025);
+}
+
+.comments-block {
+  display: flex;
+  align-items: center;
+  margin: 6px;
+}
+
+.comments-block .rate-text2 {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin: 6px;
+  transform: scale(1);
+}
+
+.rate-text2:hover {
+  transform: translate(0%, -1%) scale(1.025);
+}
+
+.comments-block .rate-text2 img.comments-selection {
+  margin-right: 6px;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.comments-selection {
+  transform: scale(1);
+}
+
+.comments-selection:hover {
+  transform: translate(0%, -1%) scale(1.025);
+}
+
+.right-block {
+  display: flex;
+  align-items: center;
+  margin: 6px;
+}
+
+.right-block img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.scales-selection {
+  margin: 6px;
+}
+
+.heart-selection {
+  margin: 6px;
+}
+
+.right-selection {
+  transform: scale(1);
+}
+
+.right-selection:hover {
+  transform: translate(0%, -1%) scale(1.025);
+}
+
