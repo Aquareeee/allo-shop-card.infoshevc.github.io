@@ -1,1 +1,1 @@
-# allo-shop-card.infoshevc.github.io
+# Allo shop card
